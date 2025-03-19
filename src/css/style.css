@@ -118,11 +118,6 @@ body {
   border-top: 5px solid #4e75ff;
   border-radius: 50%;
   animation: spin 1s linear infinite;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
 }
 
 @keyframes spin {
@@ -132,6 +127,65 @@ body {
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
+}
+
+/* кнопка завантаження фото */
+
+.load-more-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 15px;
+}
+
+.load-more {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  background-color: #4e75ff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.load-more:hover {
+  transform: translateY(-2px);
+  background: #6c8cff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+/* кнопка скрола */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #4e75ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .hidden {

@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <span class="loader hidden"></span>
     <form class="form">
       <label>
         <input type="text" name="search-text" placeholder="Search images..." />
@@ -19,6 +18,27 @@
       <button type="submit">Search</button>
     </form>
     <ul class="gallery"></ul>
+    <div class="load-more-container">
+      <button class="load-more hidden">Load more</button>
+      <span class="loader hidden"></span>
+    </div>
+    <button class="scroll-to-top hidden">
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 19V5M5 12L12 5L19 12"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
     <script src="./main.js" type="module"></script>
   </body>
 </html>

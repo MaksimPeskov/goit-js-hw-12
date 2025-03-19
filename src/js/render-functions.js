@@ -25,9 +25,13 @@ export const createImageCardTemplate = ({
   `;
 };
 
-export const renderGallery = (images, galleryElement) => {
+export const renderGallery = (images, galleryElement, append = false) => {
   const markup = images.map(image => createImageCardTemplate(image)).join('');
-  galleryElement.innerHTML = markup;
+  if (append) {
+    galleryElement.insertAdjacentHTML('beforeend', markup);
+  } else {
+    galleryElement.innerHTML = markup;
+  }
 
   const lightbox = new SimpleLightbox('.gallery a', {
     captions: true,
