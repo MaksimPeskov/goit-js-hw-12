@@ -8,13 +8,12 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <title>Image Search</title>
-    <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-DXaqCXe3.js">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-CWKLx11g.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-DIXV2tKS.css">
+    <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-DXaqCXe3.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-CWKLx11g.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-DOoA4Ye2.css">
   </head>
   <body>
-    <span class="loader hidden"></span>
     <form class="form">
       <label>
         <input type="text" name="search-text" placeholder="Search images..." />
@@ -22,5 +21,26 @@
       <button type="submit">Search</button>
     </form>
     <ul class="gallery"></ul>
+    <div class="load-more-container">
+      <button class="load-more hidden">Load more</button>
+      <span class="loader hidden"></span>
+    </div>
+    <button class="scroll-to-top hidden">
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 19V5M5 12L12 5L19 12"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
   </body>
 </html>
